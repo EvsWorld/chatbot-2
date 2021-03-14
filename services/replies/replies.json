@@ -1,34 +1,42 @@
 [{
   "id":  "604d30c85dd7a66580ffe6a5",
-  "updatedAt": "2021-03-13T21:38:33.072Z" ,
   "botId": "5f74865056d7bb000fcd39ff" ,
-  "intent": "Test Greeting",
+  "intent": "Greeting",
   "replyMessage": "Hello to you too."
 },
 {
   "id": "604d3edf6e75ad3cef03f399" ,
-  "updatedAt":  "2021-03-13T21:38:33.072Z" ,
   "botId": "5f74865056d7bb000fcd39ff" ,
-  "intent": " Test Order status",
+  "intent": "Order status",
   "replyMessage": "Let me check on your order status."
 },
 {
   "id":  "604e32cc6e75ad3cef03f39c" ,
-  "updatedAt":  "2021-03-13T21:38:33.072Z" ,
   "botId":  "5f74865056d7bb000fcd39ff" ,
-  "intent": " Test Thank you",
+  "intent": "Thank you",
   "replyMessage": "Thanks you for your time."
 },
 {
   "id":  "604e345e6e75ad3cef03f39d" ,
-  "updatedAt":  "2021-03-13T21:38:33.072Z" ,
   "botId": "5f74865056d7bb000fcd39ff" ,
-  "intent": "Test Means or need to contact",
+  "intent": "Means or need to contact",
   "replyMessage": "I'll have someone contact you shortly."
 }, {
   "id":  "604e345e6e75ad3cef03f39d" ,
-  "updatedAt":  "2021-03-13T21:38:33.072Z" ,
   "botId": "5f74865056d7bb000fcd39ff" ,
-  "intent": "Test I want to speak with a human",
+  "intent": "I want to speak with a human",
   "replyMessage": "Of course, I'll connect you to one of our representatives now."
-}]
+},
+{
+  "id": "604e558e1792998dd4528344",
+  "intent": "Insult",
+  "replyMessage": "Well, that hurts my robot feelings. But I would still like to help if possible. Let's try again.",
+  "botId": "5f74865056d7bb000fcd39ff"
+},
+{
+  "id": "604e56bb86d88f8fb6686ced",
+  "intent": "Returning order",
+  "replyMessage": "I understood you would like to return an order, is that right?",
+  "botId": "5f74865056d7bb000fcd39ff"
+}
+]

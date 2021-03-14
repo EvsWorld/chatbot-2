@@ -12,7 +12,6 @@ const repliesToSeed = JSON.parse(
  *
  **/
 export const bulkAdd = (arrayToBulkAdd) => {
-  console.log('arrayToBulkAdd :>> ', arrayToBulkAdd);
   const bulkOps = arrayToBulkAdd.map((doc) => ({
     updateOne: {
       filter: { intent: doc.intent },
@@ -29,5 +28,5 @@ export const bulkAdd = (arrayToBulkAdd) => {
 };
 
 connectDb().then(async () => {
-   bulkAdd(repliesToSeed);
+  bulkAdd(repliesToSeed);
 });
