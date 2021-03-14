@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "604d30c85dd7a66580ffe6a5"
+  },
+  "updatedAt": {
+    "$date": "2021-03-13T21:38:33.072Z"
+  },
+  "botId": {
+    "$oid": "5f74865056d7bb000fcd39ff"
+  },
+  "intent": "Greeting",
+  "replyMessage": "Hello to you too"
+},{
+  "_id": {
+    "$oid": "604d3edf6e75ad3cef03f399"
+  },
+  "updatedAt": {
+    "$date": "2021-03-13T21:38:33.072Z"
+  },
+  "botId": {
+    "$oid": "5f74865056d7bb000fcd39ff"
+  },
+  "intent": "Order status",
+  "replyMessage": "Let me check on your order status"
+},{
+  "_id": {
+    "$oid": "604e32cc6e75ad3cef03f39c"
+  },
+  "updatedAt": {
+    "$date": "2021-03-13T21:38:33.072Z"
+  },
+  "botId": {
+    "$oid": "5f74865056d7bb000fcd39ff"
+  },
+  "intent": "Thank you",
+  "replyMessage": "Thanks you for your time"
+},{
+  "_id": {
+    "$oid": "604e345e6e75ad3cef03f39d"
+  },
+  "updatedAt": {
+    "$date": "2021-03-13T21:38:33.072Z"
+  },
+  "botId": {
+    "$oid": "5f74865056d7bb000fcd39ff"
+  },
+  "intent": "Means or need to contact",
+  "replyMessage": "I'll have someone contact you shortly"
+}]

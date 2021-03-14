@@ -14,10 +14,7 @@ export const findAll = (req, res) => {
 
 export const findOne = (req, res) => {
   const { intent, botId } = req.query;
-  // TODO: queries by just intent if theres no botId. I assume the botId would
-  // be a client identifier.  So we can send the botId and then have custom
-  // responses for different companies. But we'll leave botId optional for now
-  const query = botId ? { intent, botId } : { intent };
+  const query = { intent };
 
   Reply.findOne(query).exec((err, reply) => {
     if (err) {
@@ -26,10 +23,12 @@ export const findOne = (req, res) => {
     }
 
     if (!reply) {
-      return res.status(404).send({ message: 'reply Not found.' });
+      return res.status(404).send({
+        message: `Reply not found in server 2 db for intent: ${intent}`,
+      });
     }
-
-    res.status(200).send({ reply });
+    console.log(`found reply for intent: '${intent}' :>> `, reply);
+    res.status(200).send(reply);
   });
 };
 
