@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npx babel-node index.js",
     "nodemon": "nodemon --exec  babel-node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:seed": "npx babel-node services/replies/replies.service.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "mongoose": "^5.11.16",
     "morgan": "^1.10.0"
   },
