@@ -17,6 +17,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "jsonschema": "^1.4.0",
     "mongoose": "^5.11.16",
     "morgan": "^1.10.0"
   },
