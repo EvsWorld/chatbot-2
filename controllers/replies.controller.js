@@ -25,7 +25,6 @@ export const handleGetReplies = (req, res) => {
         meta: `Reply not found in server 2 db for intent: ${intent}`,
       });
     }
-    console.log(`found reply for intent: '${intent}' :>> `, reply);
     res
       .status(200)
       .send({ status: 200, meta: 'found reply for intent', data: reply });
@@ -41,12 +40,11 @@ export const create = (req, res) => {
 
   reply.save((err, reply) => {
     if (err) {
-      console.error(err);
       res.status(500).send({ meta: err });
       return;
     }
 
-    res.status(200).send({
+    res.status(201).send({
       meta: 'Successfully created reply, see details in data',
       data: {
         intent: reply.intent,

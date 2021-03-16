@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Post reply",
+  "description": "Post Reply Input Validation Schema",
+  "type": "object",
+
+  "properties": {
+    "botId": {
+      "type": "string",
+      "pattern": "^(?=[a-f\\d]{24}$)(\\d+[a-f]|[a-f]+\\d)",
+      "examples": ["5f74865056d7bb000fcd39ff"]
+    },
+    "intent": {
+      "type": "string",
+      "description":"Can be a unique string, and should correspond to an expected intent from AI api intents.",
+      "examples":["Returning order"]
+    },
+    "replyMessage": {
+      "type": "string",
+      "description": "A string that you want to corespond to your given intent, also in this post request",
+      "examples": ["I understood you would like to return an order, is that right?"]
+    }
+  },
+
+  "required": ["botId", "intent", "replyMessage"],
+  "additionalProperties": false
+}

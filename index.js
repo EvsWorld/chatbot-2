@@ -4,10 +4,12 @@ import { connectDb } from './db';
 import routes from './routes';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
+import cors from 'cors';
 
 const PORT = process.env.PORT || 5000;
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.json({ extended: true }));
 
@@ -34,7 +36,6 @@ app.get('*', function (req, res, next) {
 });
 
 app.use((error, req, res, next) => {
-  console.error('hit the error middleware! error = ', error);
   if (!error.statusCode) error.statusCode = 500;
 
   if (error.statusCode === 301) {
